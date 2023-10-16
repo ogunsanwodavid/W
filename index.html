@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-----------Important meta tags----------->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Junior Frontend Mentor Challenge to build a news homepage named W">
+    <meta property="og:description" content="Junior Frontend Mentor Challenge to build a news homepage named W">
+    <meta name="author" content="Ogunsanwo David Oluwadamilare">
+    <meta property="og:author" content="Ogunsanwo David Oluwadamilare">
+    <meta property="og:image" content="https://github.com/ogunsanwodavid/FYLO/assets/images/favicon-32x32.png">
+    <meta property="og:title" content="W: A news homepage">
+
+    <!-----------Title---------->
+    <title>W: A news homepage</title>
+
+    <!------------Favicon------------->
+    <link rel="shortcut icon" href="./dist/images/favicon-32x32.png" type="image/x-icon">
+
+    <!-------Linked stylesheets, fonts, icons and libraries------------>
+    <link rel="stylesheet" href="./dist/css/main.css">
+
+    <!----------Fontawesome icons---------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!--------Google Fonts----------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!------Scripts---------->
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <img src="./dist/images/logo.svg" alt="#" class="logo" id="logo">
+
+            <div class="navright">
+                <ul>
+                    <li>Home</li>
+                    <li>New</li>
+                    <li>Popular</li>
+                    <li>Trending</li>
+                    <li>Categories</li>
+                </ul>
+    
+                <img src="./dist/images/icon-menu.svg" alt="" class="icon-menu" onclick="openNav()">
+            </div>
+        </nav>
+
+        <main>
+            <div class="main-bg">
+
+            </div>
+
+            <div class="showcase">
+                <h1>The Bright Future of Web 3.0?</h1>
+
+                <div class="showcase-txt">
+                    <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+
+                    <button>READ MORE</button>
+                </div>
+            </div>
+
+            <div class="new">
+                <h2>New</h2>
+
+                <div class="new-item">
+                    <h3>Hydrogen vs Electric Cars</h3>
+                    <p>Will hydrogen-fueled cars ever catch up with EVs?</p>
+                </div>
+
+                
+                <div class="new-item">
+                    <h3>The Downsides of AI Artistry</h3>
+                    <p>What are the possible adverse effects of on-demand AI image generation?</p>
+                </div>
+
+                <div class="new-item">
+                    <h3>Is VC Funding Drying Up?</h3>
+                    <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+                </div>
+
+            </div>
+        </main>
+
+        <section class="blog">
+            <div class="blog-item blog-1">
+                <img src="./dist/images/image-retro-pcs.jpg" alt="">
+
+                <div class="blog-text">
+                    <h4>01</h4>
+                    <h5>Reviving Retro PCs</h5>
+                    <p>What happens when old PCs are given modern upgrades?</p>
+                </div>
+            </div>
+
+            <div class="blog-item blog-2">
+                <img src="./dist/images/image-top-laptops.jpg" alt="#">
+
+                <div class="blog-text">
+                    <h4>02</h4>
+                    <h5>Top 10 Laptops of 2022</h5>
+                    <p>Our best picks for various needs and budgets.</p>
+                </div>
+            </div>
+
+            <div class="blog-item blog-3">
+                <img src="./dist/images/image-gaming-growth.jpg" alt="#">
+
+                <div class="blog-text">
+                    <h4>03</h4>
+                    <h5>The Growth of Gaming</h5>
+                    <p>How the pandemic has sparked fresh opportunities.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="nav-dropdown" id="hidden-nav">
+            <img src="./dist/images/icon-menu-close.svg" alt="" class="icon-menu-close" onclick="closeNav()">
+
+            <ul>
+                <li>Home</li>
+                <li>New</li>
+                <li>Popular</li>
+                <li>Trending</li>
+                <li>Categories</li>
+            </ul>
+    </section>
+
+    <script>
+        function openNav() {
+            document.getElementById("hidden-nav").style.display = "block";
+        }
+        function closeNav() {
+            document.getElementById("hidden-nav").style.display = "none";
+        }
+    </script>
+</body>
